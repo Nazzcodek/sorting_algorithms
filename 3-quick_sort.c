@@ -63,7 +63,7 @@ int lomuto_partition(int *array, int low, int high, size_t size)
 		print_array(array, size);
 	}
 
-		return (i + 1);
+	return (i + 1);
 }
 
 /**
@@ -75,10 +75,11 @@ int lomuto_partition(int *array, int low, int high, size_t size)
  */
 void quicksort(int *array, int low, int high, size_t size)
 {
-	int pivot_idx = lomuto_partition(array, low, high, size);
+	int pivot_idx;
 
 	if (low < high)
 	{
+		pivot_idx = lomuto_partition(array, low, high, size);
 		quicksort(array, low, pivot_idx - 1, size);
 		quicksort(array, pivot_idx + 1, high, size);
 	}
