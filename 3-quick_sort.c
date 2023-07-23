@@ -35,6 +35,7 @@ void swap(int *a, int *b)
  * @array: The array to be sorted
  * @low: Starting index of the partition
  * @high: Ending index of the partition
+ * @size: size of the array
  *
  * Return: Index of the pivot element after partitioning
  */
@@ -72,6 +73,7 @@ int lomuto_partition(int *array, int low, int high, size_t size)
  * @array: The array to be sorted
  * @low: Starting index of the partition
  * @high: Ending index of the partition
+ * @size: size of the array
  */
 void quicksort(int *array, int low, int high, size_t size)
 {
